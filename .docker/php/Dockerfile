@@ -10,21 +10,20 @@ RUN apt-get update && apt-get install -y \
     libwebp-dev \
     locales \
     zip \
-    jpegoptim optipng pngquant gifsicle \
+    jpegoptim \
+    optipng \
+    pngquant  \
+    gifsicle \
     unzip \
     git \
     curl \
-
-RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install pdo_mysql -j$(nproc) gd
 
 RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash - && apt-get install -y nodejs
 RUN npm install -g npm@latest
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-RUN composer install && \
-    npm install && \
-    npm i gulp --save && \
 
 RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
