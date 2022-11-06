@@ -1,3 +1,4 @@
 <?php return [
-    'home' => 'home'
+    'home' => 'home',
+    'profile' => 'profile'
 ];
