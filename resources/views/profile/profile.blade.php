@@ -1,4 +1,4 @@
-@extends('profile\layout')
+@extends('profile.layout')
 
 @section('content')
     <section style="background-color: #eee;">

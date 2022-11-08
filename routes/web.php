@@ -17,8 +17,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/photo-archives', function () {
+    return view('media/media');
+});
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Route::get('/media', function () {
+//     return view('media');
+// })->middleware(['auth', 'verified'])->name('media');
 
 require __DIR__.'/auth.php';
