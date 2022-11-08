@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', 'Фото архів')
+
 @section('content')
 <main class="main">
               <section class="main__section1">

@@ -1,5 +1,6 @@
 import './bootstrap';
 import './media/modal';
+import './tmp/burger';
 
 import Alpine from 'alpinejs';
 

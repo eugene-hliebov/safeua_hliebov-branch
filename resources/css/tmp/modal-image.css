@@ -1,12 +1,11 @@
 .modal__image .modal-content{
     background-color: transparent;
     border: none;
-    
 }
 .modal__image .modal-dialog{
     max-width: 1000px;
     min-height: 562.5px;
-    margin: 5% auto 0;
+    margin: 5% auto;
 }
 .modal-open .modal{
     overflow-x: hidden;
