@@ -8,7 +8,7 @@
                      <div class="container">
                             <nav class="sub-menu__body">
                                    <ul class="sub-menu__list">
-                                          <li class="sub-menu__item"><a href="/media/all-photos" class="sub-menu__link">Всі світлинни</a></li>
+                                          <li class="sub-menu__item"><a href="/photo-archives/all-photos" class="sub-menu__link">Всі світлинни</a></li>
                                           <li class="sub-menu__item"><a href="" class="sub-menu__link">Мої світлинни</a></li>
                                    </ul>
                             </nav>

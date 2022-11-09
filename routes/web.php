@@ -21,6 +21,9 @@ Route::get('/', function () {
 Route::get('/photo-archives', function () {
     return view('media/media');
 });
+Route::get('/photo-archives/all-photos', function () {
+    return view('media/all-photos');
+});
 
 
 
